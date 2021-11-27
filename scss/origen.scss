@@ -1,0 +1,27 @@
+/* Archivo SCSS Final */
+$logo-width:60px;
+$logo-borde:50%;
+
+
+
+@import "./reseteo/reseteo";
+
+@import "./color/color";
+
+@import "./googleFonts/googleFonts";
+
+@import "./menuNavegacion/menuNavegacion";
+
+@import "./estilosGenerales/estilosGenerales";
+
+@import "./paginas/paginaNosotros";
+
+@import "./paginas/paginaProductos";
+
+@import "./paginas/paginaContacto";
+
+@import "./JQuery/jQueryDesktop";
+
+@import "./JQuery/jQueryTablet";
+
+@import "./footer/footer";

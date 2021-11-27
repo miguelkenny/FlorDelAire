@@ -1,0 +1,5 @@
+#Dentro de este archivo armo una lista de objetos a ignorar
+
+#Ignora archivos
+
+node_modules

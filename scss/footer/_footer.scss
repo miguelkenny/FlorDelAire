@@ -1,0 +1,14 @@
+/*------------------------------------------------------------------------------*/
+/*------------- Estilo para El Menu Pie de Página Sitio Completo ---------------*/
+/*------------------------------------------------------------------------------*/
+.logo-footer{
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: $sombra;
+}
+
+.bg-footer{
+    font-size: 18px;
+    color: $blanco;
+    background-image: $color-bg-footer;
+}

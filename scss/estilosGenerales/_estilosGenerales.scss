@@ -1,0 +1,234 @@
+/*-------------------------------------------------------------------*/
+/*-------------------- Estilos Generales del Sitio ------------------*/
+/*-------------------------------------------------------------------*/
+
+/* Estilo del Video Del Index */
+.contenido{
+    padding-top: 130px;
+}
+/* Estilo para las etiquetas h1, h2 y h3 del Sitio Completo */
+h1{
+    font-size: 40px;
+    color: hotpink;
+}
+
+/* Centramos Display 2 de Bootstrap */
+#centrar{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Resaltamos Display 2 de Bootstrap cuando pasamos el mouse por encima */
+#centrar:hover {
+    transition:0.3s ease-in-out;
+    color: $blanco;
+    text-transform:uppercase;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(250, 60, 155), rgb(153, 17, 153));
+}
+
+/* Estilo general para los h2 del sitio */
+h2{
+    font-size: 28px;
+    color: hotpink;
+}
+.estiloH3Productos{
+    font-size: 18px;
+    color: hotpink;
+}
+
+/* estilo de la Linea Horizontal divisora */
+hr{
+    color: grey;
+    width: 400px;
+    height: 3px;
+    background-color: grey;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Estilo de Texto CURSIVA para cuando lo necesitemos */
+.cursiva{
+    font-style: italic;
+}
+
+/* Estilo de Texto NEGRITA para cuando lo necesitemos */
+.negrita{
+    font-weight: bold;
+}
+
+/* Estilo de Texto Uppercase para cuando lo necesitemos */
+.mayuscula{
+    text-transform: uppercase;
+}
+
+/* Formato Color de todos los parrafos del sitio */
+.formatoParrafo{
+    color: rgb(78, 14, 196);
+}
+
+/* Centramos los párrafos que necesitmaos */
+.centrarParrafos{
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Justificamos los párrafos que necesitmaos */
+.parrafoJustificado {
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Ubicacion y Estilo de Botones Generales del Sitio*/
+.boton {
+    border: none;
+    min-width: 180px;
+    height: 50px;
+    padding: 0 30px;
+    color: $blanco;
+    display: inline-block;
+    border-radius: 100px;
+    text-decoration: none;
+    list-style: none;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(133, 22, 105);
+    transition: 0.3s ease all;
+}
+
+.boton:hover {
+    background: rgb(92, 11, 72);
+    color: $blanco;
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+    box-shadow: $sombra;
+}
+
+/* Modificador para Botones de Pagina de Inicio*/
+.boton--centrado {
+    display: inline-flex;
+    margin-left: 30%;
+}
+
+/* Modificador para Botones de Pagina de Contacto*/
+.boton--contacto {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    border-radius: 10px;
+}
+
+.boton--verde {
+    background-color: red;
+}
+
+.boton--verde:hover {
+    background-color: rgb(136, 4, 4);
+}
+
+/* Modificador para Botones de Pagina de Productos*/
+.boton--gradient {
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(121,9,73,1) 35%, rgba(255,0,168,1) 100%);
+}
+
+/* Fondo Gris Oscuro y Letras Blancas para las etiquetas que necesitemos */
+.fondoContraste{
+    background-color: rgb(54, 54, 54);
+    color:$blanco;
+    
+}
+
+/* Centramos todos los títulos que necesitemos */
+.centrarTitulos{
+    text-align: center;
+}
+
+section div{
+    font-size: 16px;
+    color: rgb(78, 14, 196);
+}
+td a{
+    font-size: 16px;
+    color: rgb(78, 14, 196);
+}
+
+/* Estilo del Slider 3 Pagina Index */
+.slider3{
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+    row-gap: 25px;
+    margin-bottom: 30px;
+    .border{
+        box-shadow: $sombra;
+        border-radius: 10px;
+    }
+    div img{
+        display: block;
+        width: 250px;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        border-radius: 50%;
+        box-shadow: $sombra;
+    }
+}
+
+.slider3 div:hover{
+    transition: 0.8s;
+    transform: scale(1.1,1.1);
+    background-image: linear-gradient(346deg, rgba(19,19,19,1) 0%, rgba(240,121,189,1) 50%, rgba(255,51,185,1) 100%);
+    img {
+        border-radius: 50%;
+        box-shadow: $sombra;
+    }
+    .parrafoJustificado{
+        color: white;
+    }
+}
+
+.border{
+    box-shadow: $sombra;
+}
+
+.slider3 div{
+    padding-bottom: 20px;
+}
+
+
+
+td p{
+    font-size: 16px;
+    color: rgb(78, 14, 196);
+}
+
+/* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.contenedor1{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}

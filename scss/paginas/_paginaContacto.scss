@@ -1,0 +1,103 @@
+/*-----------------------------------------------------------------------------*/
+/*----------------------- Estilo para Pagina de CONTACTO ----------------------*/
+/*-----------------------------------------------------------------------------*/
+.fondoContacto{
+    background-image: url(https://st2.depositphotos.com/3008028/5544/i/600/depositphotos_55447983-stock-photo-abstract-light-blue-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ubicarH1{
+    color: black;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.parrafoSuperior{
+    font-size: 20px;
+    padding-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+/* Estilo Formulario de Contacto */
+
+/* Color de fonde del Formulario */
+.fondoFormulario{
+    background-color: rgb(255, 163, 163);
+    padding: 30px;
+    max-width: 90%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    box-shadow: $sombra;
+}
+
+/* ---- Centrar formulario FLEX ---- */
+.centrarFormularioFlex{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+/* Establecemos estilo a Input Nombre - Select - Correo - Asunto */
+.ubicarInputsFlex{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.inputSelect{
+    width: 47%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border: none;
+    box-shadow: $sombra;
+}
+/* Estilo del Text Area*/
+.estiloTextArea{
+    margin-top: 18px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    max-width: 100%;
+    border: none;
+    box-shadow: $sombra;
+}
+
+.divNoticias{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.divTerminos{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+select option{
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 18px;
+}
+
+/* Estilo de los Placeholder */
+::placeholder{
+    font-size: 18px;
+    color:black;
+}
+
+form div{
+    font-size: 20px;
+}
+
+label{
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/* Ubicacion y estilo de Botones */
+.ubicarBotonesFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}

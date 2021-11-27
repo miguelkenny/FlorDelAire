@@ -1,0 +1,30 @@
+/*-----------------------------------------------------------------------------*/
+/*--------------------------- Estilo Pagina NOSOTROS --------------------------*/
+/*-----------------------------------------------------------------------------*/
+
+.gridNosotros{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    row-gap: 40px;
+
+    /* Estilo para imagen de Página Nosotros */
+    .imgPaginaNosotros{
+        max-width: 100%;
+        border-radius: 8px;
+        align-content: center;
+    }
+}
+
+
+
+/* Bucle FOR para aplicar estilos repetitivos a las secciones*/
+@for $i from 1 through 6{
+    .seccion#{$i}{
+        padding: 25px 20px;
+        box-shadow: $sombra;
+        margin-bottom: 20px;
+    }
+}

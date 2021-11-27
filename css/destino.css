@@ -1,0 +1,683 @@
+@charset "UTF-8";
+/* Archivo SCSS Final */
+/* Reseteo CSS */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-family: 'Oswald', sans-serif;
+  background-color: thistle; }
+
+body {
+  max-width: 1650px;
+  margin: 0 auto; }
+
+/* Colores Generales del Sitio */
+/* Importando e Implementamos Google Fonts */
+/*------------------------------------------------------------*/
+/* Estilo para El Menu de Navegacion - PARA EL SITIO COMPLETO */
+/*------------------------------------------------------------*/
+.logo {
+  width: 60px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.bg-nav {
+  font-size: 24px;
+  background-image: linear-gradient(to bottom, #353535, #c43ea2); }
+
+/* Resaltamos el menú cuando el mouse pasa por encima */
+.nav-item:hover {
+  background: #e73cbc;
+  border-radius: 7px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/*-------------------------------------------------------------------*/
+/*-------------------- Estilos Generales del Sitio ------------------*/
+/*-------------------------------------------------------------------*/
+/* Estilo del Video Del Index */
+.contenido {
+  padding-top: 130px; }
+
+/* Estilo para las etiquetas h1, h2 y h3 del Sitio Completo */
+h1 {
+  font-size: 40px;
+  color: hotpink; }
+
+/* Centramos Display 2 de Bootstrap */
+#centrar {
+  text-align: center;
+  margin-bottom: 35px; }
+
+/* Resaltamos Display 2 de Bootstrap cuando pasamos el mouse por encima */
+#centrar:hover {
+  transition: 0.3s ease-in-out;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: linear-gradient(to right, #fa3c9b, #991199); }
+
+/* Estilo general para los h2 del sitio */
+h2 {
+  font-size: 28px;
+  color: hotpink; }
+
+.estiloH3Productos {
+  font-size: 18px;
+  color: hotpink; }
+
+/* estilo de la Linea Horizontal divisora */
+hr {
+  color: grey;
+  width: 400px;
+  height: 3px;
+  background-color: grey;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px; }
+
+/* Estilo de Texto CURSIVA para cuando lo necesitemos */
+.cursiva {
+  font-style: italic; }
+
+/* Estilo de Texto NEGRITA para cuando lo necesitemos */
+.negrita {
+  font-weight: bold; }
+
+/* Estilo de Texto Uppercase para cuando lo necesitemos */
+.mayuscula {
+  text-transform: uppercase; }
+
+/* Formato Color de todos los parrafos del sitio */
+.formatoParrafo {
+  color: #4e0ec4; }
+
+/* Centramos los párrafos que necesitmaos */
+.centrarParrafos {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+/* Justificamos los párrafos que necesitmaos */
+.parrafoJustificado {
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px; }
+
+/* Ubicacion y Estilo de Botones Generales del Sitio*/
+.boton {
+  border: none;
+  min-width: 180px;
+  height: 50px;
+  padding: 0 30px;
+  color: white;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #851669;
+  transition: 0.3s ease all; }
+
+.boton:hover {
+  background: #5c0b48;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  list-style: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/* Modificador para Botones de Pagina de Inicio*/
+.boton--centrado {
+  display: inline-flex;
+  margin-left: 30%; }
+
+/* Modificador para Botones de Pagina de Contacto*/
+.boton--contacto {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  border-radius: 10px; }
+
+.boton--verde {
+  background-color: red; }
+
+.boton--verde:hover {
+  background-color: #880404; }
+
+/* Modificador para Botones de Pagina de Productos*/
+.boton--gradient {
+  background-image: linear-gradient(0deg, black 0%, #790949 35%, #ff00a8 100%); }
+
+/* Fondo Gris Oscuro y Letras Blancas para las etiquetas que necesitemos */
+.fondoContraste {
+  background-color: #363636;
+  color: white; }
+
+/* Centramos todos los títulos que necesitemos */
+.centrarTitulos {
+  text-align: center; }
+
+section div {
+  font-size: 16px;
+  color: #4e0ec4; }
+
+td a {
+  font-size: 16px;
+  color: #4e0ec4; }
+
+/* Estilo del Slider 3 Pagina Index */
+.slider3 {
+  display: grid;
+  grid-template-rows: 33% 33% 33%;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  margin: 0 auto;
+  row-gap: 25px;
+  margin-bottom: 30px; }
+  .slider3 .border {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px; }
+  .slider3 div img {
+    display: block;
+    width: 250px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.slider3 div:hover {
+  transition: 0.8s;
+  transform: scale(1.1, 1.1);
+  background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%); }
+  .slider3 div:hover img {
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .slider3 div:hover .parrafoJustificado {
+    color: white; }
+
+.border {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.slider3 div {
+  padding-bottom: 20px; }
+
+td p {
+  font-size: 16px;
+  color: #4e0ec4; }
+
+/* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.contenedor1 {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center; }
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------- Estilo Pagina NOSOTROS --------------------------*/
+/*-----------------------------------------------------------------------------*/
+.gridNosotros {
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  row-gap: 40px;
+  /* Estilo para imagen de Página Nosotros */ }
+  .gridNosotros .imgPaginaNosotros {
+    max-width: 100%;
+    border-radius: 8px;
+    align-content: center; }
+
+/* Bucle FOR para aplicar estilos repetitivos a las secciones*/
+.seccion1 {
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px; }
+
+.seccion2 {
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px; }
+
+.seccion3 {
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px; }
+
+.seccion4 {
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px; }
+
+.seccion5 {
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px; }
+
+.seccion6 {
+  padding: 25px 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 20px; }
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------- Estilo Pagina PRODUCTOS -------------------------*/
+/*-----------------------------------------------------------------------------*/
+.fondoProductos {
+  background-image: url(https://image.freepik.com/vector-gratis/fondo-abstracto-acuarela_220290-23.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+
+.galeriaProductos {
+  display: grid;
+  justify-content: center; }
+
+.imgProductos {
+  align-items: center;
+  background-color: white;
+  width: 440px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/* Estilo de la seccion Productos al pasar el Mouse*/
+.imgProductos:hover {
+  transition: 0.8s;
+  transform: scale(1.1, 1.1);
+  background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+  border-radius: 8px; }
+  .imgProductos:hover .img1 {
+    border-radius: 8px; }
+  .imgProductos:hover .h3Prod, .imgProductos:hover .parrafoProd {
+    color: white; }
+  .imgProductos:hover .boton--gradient {
+    background-image: linear-gradient(346deg, #ffabab 0%, #f079bd 50%, white 100%); }
+  .imgProductos:hover .boton__texto {
+    color: black; }
+
+/*-----------------------------------------------------------------------------*/
+/*----------------------- Estilo para Pagina de CONTACTO ----------------------*/
+/*-----------------------------------------------------------------------------*/
+.fondoContacto {
+  background-image: url(https://st2.depositphotos.com/3008028/5544/i/600/depositphotos_55447983-stock-photo-abstract-light-blue-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.ubicarH1 {
+  color: black;
+  padding-top: 70px;
+  padding-bottom: 30px; }
+
+.parrafoSuperior {
+  font-size: 20px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%; }
+
+/* Estilo Formulario de Contacto */
+/* Color de fonde del Formulario */
+.fondoFormulario {
+  background-color: #ffa3a3;
+  padding: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/* ---- Centrar formulario FLEX ---- */
+.centrarFormularioFlex {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; }
+
+/* Establecemos estilo a Input Nombre - Select - Correo - Asunto */
+.ubicarInputsFlex {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between; }
+
+.inputSelect {
+  width: 47%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+/* Estilo del Text Area*/
+.estiloTextArea {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  max-width: 100%;
+  border: none;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.divNoticias {
+  margin-top: 8px;
+  margin-bottom: 8px; }
+
+.divTerminos {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+select option {
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 18px; }
+
+/* Estilo de los Placeholder */
+::placeholder {
+  font-size: 18px;
+  color: black; }
+
+form div {
+  font-size: 20px; }
+
+label {
+  margin-top: 15px;
+  font-size: 18px; }
+
+/* Ubicacion y estilo de Botones */
+.ubicarBotonesFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+/* Desktop*/
+@media (min-width: 1370px) {
+  .logo {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .bg {
+    font-size: 25px; }
+  ul li {
+    margin: 8px;
+    padding: 5px 5px; }
+  .contenido {
+    padding-top: 150px; }
+  #video {
+    max-width: 100%;
+    height: 760px;
+    box-sizing: content-box; }
+  .slider3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    column-gap: 20px; }
+    .slider3 .border {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 10px; }
+  .caja1 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 750px; }
+    .caja1 .boton {
+      width: 200px; }
+  .caja2 {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 750px; }
+    .caja2 .boton {
+      width: 200px; }
+  /* Escalamos la imagen al pasar el mouse por encima */
+  .slider3 div:hover {
+    transition: 0.8s;
+    transform: scale(1.1, 1.1);
+    background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%); }
+    .slider3 div:hover img {
+      border-radius: 50%;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+    .slider3 div:hover .parrafoJustificado {
+      color: white; }
+  .slider3 div img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto; }
+  .logo-footer {
+    width: 120px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  /* Pagina NOSOTROS para DESKTOP*/
+  .gridNosotros {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 30% 30%;
+    gap: 20px 20px;
+    width: 60%; }
+  .imgPaginaNosotros {
+    border-radius: 8px; }
+  /* Bucle FOR para aplicar estilos repetitivos a secciones de página NOSOTROS */
+  .seccion1 {
+    box-shadow: none;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .seccion2 {
+    grid-row: 1 / 4;
+    margin-left: 15px;
+    height: 3fr;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 40px; }
+  .seccion3 {
+    box-shadow: none;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .seccion4 {
+    box-shadow: none;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .seccion5 {
+    box-shadow: none;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  .seccion6 {
+    box-shadow: none;
+    margin-top: 30px;
+    margin-bottom: 20px; }
+  /* Ubicacion y estilo de Botones */
+  .ubicarBotonesFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+  /* Pagina PRODUCTOS Para DESKTOP */
+  .galeriaProductos {
+    display: grid;
+    grid-template-columns: 480px 480px 480px;
+    justify-content: center;
+    align-content: center; }
+  /* Estilo de la seccion Productos al pasar el Mouse*/
+  .imgProductos:hover {
+    transition: 0.8s;
+    transform: scale(1.1, 1.1);
+    background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+    border-radius: 8px; }
+    .imgProductos:hover .img1 {
+      border-radius: 8px; }
+    .imgProductos:hover .h3Prod, .imgProductos:hover .parrafoProd {
+      color: white; }
+    .imgProductos:hover .boton--gradient {
+      background-image: linear-gradient(346deg, #ffabab 0%, #f079bd 50%, white 100%); }
+    .imgProductos:hover .boton__texto {
+      color: black; }
+  /* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+  .contenedor1 {
+    display: grid;
+    grid-template-columns: 450px 5fr; } }
+
+/* Tableta */
+@media (min-width: 748px) and (max-width: 1369px) {
+  .logo {
+    width: 90px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .bg {
+    font-size: 20px; }
+  .contenido {
+    padding-top: 130px; }
+  #video {
+    max-width: 100%;
+    height: 560px;
+    box-sizing: content-box; }
+  #centrar {
+    font-size: 50px; }
+  .slider3 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    column-gap: 30px; }
+    .slider3 .border {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border-radius: 10px; }
+    .slider3 .caja1 {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 700px;
+      margin-bottom: 30px; }
+      .slider3 .caja1 .boton {
+        width: 30%; }
+    .slider3 .caja2 {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      height: 700px; }
+      .slider3 .caja2 .boton {
+        width: 30%; }
+  .slider3 div:hover {
+    transition: 0.8s;
+    transform: scale(1.1, 1.1); }
+  .slider3 div img {
+    display: block;
+    max-width: 70%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto; }
+  /* Escalamos la imagen al pasar el mouse por encima */
+  .slider3 div img:hover {
+    transition: 0.8s;
+    transform: scale(1.1, 1.1);
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  /* FOOTER para TABLETAS */
+  .logo-footer {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  /* Pagina NOSOTROS para TABLETAS*/
+  .gridNosotros {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto; }
+  /* Estilo para imagen de Página Nosotros */
+  .imgPaginaNosotros {
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 8px; }
+  /* Bucle FOR para aplicar estilos repetitivos a las secciones*/
+  .seccion1 {
+    padding: 25px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px; }
+  .seccion2 {
+    padding: 25px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px; }
+  .seccion3 {
+    padding: 25px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px; }
+  .seccion4 {
+    padding: 25px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px; }
+  .seccion5 {
+    padding: 25px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px; }
+  .seccion6 {
+    padding: 25px 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 20px; }
+  /* Pagina PRODUCTOS Para TABLETAS */
+  .galeriaProductos {
+    display: grid;
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px; }
+  .imgProductos {
+    align-items: center;
+    background-color: white;
+    width: 340px;
+    padding: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  .img1 {
+    max-width: 100%; }
+  /* Estilo de la seccion Productos al pasar el Mouse*/
+  .imgProductos:hover {
+    transition: 0.8s;
+    transform: scale(1.1, 1.1);
+    background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+    border-radius: 8px; }
+    .imgProductos:hover .img1 {
+      border-radius: 8px; }
+    .imgProductos:hover .h3Prod, .imgProductos:hover .parrafoProd {
+      color: white; }
+    .imgProductos:hover .boton--gradient {
+      background-image: linear-gradient(346deg, #ffabab 0%, #f079bd 50%, white 100%); }
+    .imgProductos:hover .boton__texto {
+      color: black; }
+  /* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem; }
+  .contenedor1 {
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center; } }
+
+/*------------------------------------------------------------------------------*/
+/*------------- Estilo para El Menu Pie de Página Sitio Completo ---------------*/
+/*------------------------------------------------------------------------------*/
+.logo-footer {
+  width: 80px;
+  border-radius: 50%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.bg-footer {
+  font-size: 18px;
+  color: white;
+  background-image: linear-gradient(to bottom, #c43ea2, #353535); }

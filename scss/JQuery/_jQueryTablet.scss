@@ -1,0 +1,163 @@
+/* Tableta */
+@media (min-width: 748px) and (max-width: 1369px){
+    
+    .logo{
+        width: $logo-width + 30px;
+        border-radius: $logo-borde;
+        box-shadow: $sombra;
+    }
+
+    .bg{
+        font-size: 20px;  
+    }
+
+    .contenido{
+        padding-top: 130px;
+    }
+
+    #video{
+        max-width: 100%;
+        height: 560px;
+        box-sizing: content-box;
+    }
+
+    #centrar{
+        font-size: 50px;
+    }
+    .slider3{
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        column-gap: 30px;
+        .border{
+            box-shadow: $sombra;
+            border-radius: 10px;
+        }
+        .caja1{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin-bottom: 30px;
+            .boton{
+                width: 30%;
+            }
+        }
+    
+        .caja2{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            .boton{
+                width: 30%;
+            }
+        }
+    }
+
+    .slider3 div:hover{
+        transition: 0.8s;
+        transform: scale(1.1,1.1);
+    }
+    .slider3 div img{
+        display: block;
+        max-width: 70%;
+        height: auto;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Escalamos la imagen al pasar el mouse por encima */
+    .slider3 div img:hover {
+        transition: 0.8s;
+        transform: scale(1.1,1.1);
+        border-radius: 50%;
+        box-shadow: $sombra;
+    }
+
+    /* FOOTER para TABLETAS */
+    .logo-footer{
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: $sombra;
+    }
+
+    /* Pagina NOSOTROS para TABLETAS*/
+    .gridNosotros{
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    /* Estilo para imagen de Página Nosotros */
+    .imgPaginaNosotros{
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+    
+    /* Bucle FOR para aplicar estilos repetitivos a las secciones*/
+    @for $i from 1 through 6{
+        .seccion#{$i}{
+            padding: 25px 20px;
+            box-shadow: $sombra;
+            margin-bottom: 20px;
+        }
+    }
+
+/* Pagina PRODUCTOS Para TABLETAS */
+.galeriaProductos{
+    display: grid;
+    grid-template-columns: 340px 340px;
+    justify-content: center;
+    align-content: center;
+    column-gap: 20px;
+}
+.imgProductos{
+    align-items: center;
+    background-color:$blanco;
+    width: 340px;
+    padding: 10px;
+    box-shadow: $sombra;
+}
+.img1{
+    max-width: 100%;
+}
+
+/* Estilo de la seccion Productos al pasar el Mouse*/
+.imgProductos:hover{
+    transition: 0.8s;
+    transform: scale(1.1,1.1);
+    background-image: linear-gradient(346deg, rgba(19,19,19,1) 0%, rgba(240,121,189,1) 50%, rgba(255,51,185,1) 100%);
+    border-radius: 8px;
+    .img1{
+        border-radius: 8px;
+    }
+    .h3Prod, .parrafoProd{
+        color: white;
+    }
+    .boton--gradient{
+        background-image: linear-gradient(346deg, rgba(255,171,171,1) 0%, rgba(240,121,189,1) 50%, rgba(255,255,255,1) 100%);
+    }
+    .boton__texto{
+        color: black;
+    }
+}
+
+/* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+
+.bd-placeholder-img-lg {
+font-size: 3.5rem;
+}
+
+.contenedor1{
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+}

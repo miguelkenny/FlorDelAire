@@ -1,0 +1,21 @@
+/*------------------------------------------------------------*/
+/* Estilo para El Menu de Navegacion - PARA EL SITIO COMPLETO */
+/*------------------------------------------------------------*/
+
+.logo {
+    width: $logo-width;
+    border-radius: $logo-borde;
+    box-shadow: $sombra;
+}
+
+.bg-nav {
+    font-size: 24px;
+    background-image: $color-bg-nav;
+}
+
+/* Resaltamos el menú cuando el mouse pasa por encima */
+.nav-item:hover {
+    background: $color-nav;
+    border-radius: 7px;
+    box-shadow: $sombra;
+}

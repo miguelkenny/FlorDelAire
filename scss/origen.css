@@ -1,0 +1,1072 @@
+@charset "UTF-8";
+/* Archivo SCSS Final */
+/* Reseteo CSS */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+  background-color: thistle;
+}
+
+body {
+  max-width: 1650px;
+  margin: 0 auto;
+}
+
+/* Colores Generales del Sitio */
+/* Importando e Implementamos Google Fonts */
+/*------------------------------------------------------------*/
+/* Estilo para El Menu de Navegacion - PARA EL SITIO COMPLETO */
+/*------------------------------------------------------------*/
+.logo {
+  width: 80px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg-nav {
+  font-size: 24px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#353535), to(#c43ea2));
+  background-image: linear-gradient(to bottom, #353535, #c43ea2);
+}
+
+/* Resaltamos el menú cuando el mouse pasa por encima */
+.nav-item:hover {
+  background: #e73cbc;
+  border-radius: 7px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-------------------------------------------------------------------*/
+/*-------------------- Estilos Generales del Sitio ------------------*/
+/*-------------------------------------------------------------------*/
+/* Estilo del Video Del Index */
+.contenido {
+  padding-top: 130px;
+}
+
+/* Estilo para las etiquetas h1, h2 y h3 del Sitio Completo */
+h1 {
+  font-size: 40px;
+  color: hotpink;
+}
+
+/* Centramos Display 2 de Bootstrap */
+#centrar {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Resaltamos Display 2 de Bootstrap cuando pasamos el mouse por encima */
+#centrar:hover {
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fa3c9b), to(#991199));
+  background-image: linear-gradient(to right, #fa3c9b, #991199);
+}
+
+/* Estilo general para los h2 del sitio */
+h2 {
+  font-size: 28px;
+  color: hotpink;
+}
+
+.estiloH3Productos {
+  font-size: 18px;
+  color: hotpink;
+}
+
+/* estilo de la Linea Horizontal divisora */
+hr {
+  color: grey;
+  width: 400px;
+  height: 3px;
+  background-color: grey;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/* Estilo de Texto CURSIVA para cuando lo necesitemos */
+.cursiva {
+  font-style: italic;
+}
+
+/* Estilo de Texto NEGRITA para cuando lo necesitemos */
+.negrita {
+  font-weight: bold;
+}
+
+/* Estilo de Texto Uppercase para cuando lo necesitemos */
+.mayuscula {
+  text-transform: uppercase;
+}
+
+/* Formato Color de todos los parrafos del sitio */
+.formatoParrafo {
+  color: #4e0ec4;
+}
+
+/* Centramos los párrafos que necesitmaos */
+.centrarParrafos {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Justificamos los párrafos que necesitmaos */
+.parrafoJustificado {
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* Ubicacion y Estilo de Botones Generales del Sitio*/
+.boton {
+  border: none;
+  min-width: 180px;
+  height: 50px;
+  padding: 0 30px;
+  color: white;
+  display: inline-block;
+  border-radius: 100px;
+  text-decoration: none;
+  list-style: none;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #851669;
+  -webkit-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+
+.boton:hover {
+  background: #5c0b48;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  list-style: none;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Modificador para Botones de Pagina de Inicio*/
+.boton--centrado {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 30%;
+}
+
+/* Modificador para Botones de Pagina de Contacto*/
+.boton--contacto {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  border-radius: 10px;
+}
+
+.boton--verde {
+  background-color: red;
+}
+
+.boton--verde:hover {
+  background-color: #880404;
+}
+
+/* Modificador para Botones de Pagina de Productos*/
+.boton--gradient {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(black), color-stop(35%, #790949), to(#ff00a8));
+  background-image: linear-gradient(0deg, black 0%, #790949 35%, #ff00a8 100%);
+}
+
+/* Fondo Gris Oscuro y Letras Blancas para las etiquetas que necesitemos */
+.fondoContraste {
+  background-color: #363636;
+  color: white;
+}
+
+/* Centramos todos los títulos que necesitemos */
+.centrarTitulos {
+  text-align: center;
+}
+
+section div {
+  font-size: 16px;
+  color: #4e0ec4;
+}
+
+td a {
+  font-size: 16px;
+  color: #4e0ec4;
+}
+
+/* Estilo del Slider 3 Pagina Index */
+.slider3 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 30% 30% 30%;
+      grid-template-rows: 30% 30% 30%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.slider3 .border {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+}
+
+.slider3 div img {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider3 div:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+}
+
+.slider3 div:hover img {
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider3 div:hover .parrafoJustificado {
+  color: white;
+}
+
+.border {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slider3 div {
+  padding-bottom: 20px;
+}
+
+/* Escalamos la imagen al pasar el mouse por encima */
+.slider3 div img:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+td p {
+  font-size: 16px;
+  color: #4e0ec4;
+}
+
+/* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+}
+
+.contenedor1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------- Estilo Pagina NOSOTROS --------------------------*/
+/*-----------------------------------------------------------------------------*/
+.gridNosotros {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Estilo para imagen de Página Nosotros */
+.imgPaginaNosotros {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+/* Bucle FOR para aplicar estilos repetitivos a las secciones*/
+.seccion1 {
+  max-width: 100%;
+  padding: 25px 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seccion2 {
+  max-width: 100%;
+  padding: 25px 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seccion3 {
+  max-width: 100%;
+  padding: 25px 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seccion4 {
+  max-width: 100%;
+  padding: 25px 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seccion5 {
+  max-width: 100%;
+  padding: 25px 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.seccion6 {
+  max-width: 100%;
+  padding: 25px 20px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-----------------------------------------------------------------------------*/
+/*--------------------------- Estilo Pagina PRODUCTOS -------------------------*/
+/*-----------------------------------------------------------------------------*/
+.fondoProductos {
+  background-image: url(https://image.freepik.com/vector-gratis/fondo-abstracto-acuarela_220290-23.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.galeriaProductos {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgProductos {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  width: 440px;
+  margin: 20px;
+  padding: 10px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Estilo de la seccion Productos al pasar el Mouse*/
+.imgProductos:hover {
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+  border-radius: 8px;
+}
+
+.imgProductos:hover .img1 {
+  border-radius: 8px;
+}
+
+.imgProductos:hover .h3Prod, .imgProductos:hover .parrafoProd {
+  color: white;
+}
+
+.imgProductos:hover .boton--gradient {
+  background-image: linear-gradient(346deg, #ffabab 0%, #f079bd 50%, white 100%);
+}
+
+.imgProductos:hover .boton__texto {
+  color: black;
+}
+
+/*-----------------------------------------------------------------------------*/
+/*----------------------- Estilo para Pagina de CONTACTO ----------------------*/
+/*-----------------------------------------------------------------------------*/
+.fondoContacto {
+  background-image: url(https://st2.depositphotos.com/3008028/5544/i/600/depositphotos_55447983-stock-photo-abstract-light-blue-background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ubicarH1 {
+  color: black;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.parrafoSuperior {
+  font-size: 20px;
+  padding-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+/* Estilo Formulario de Contacto */
+/* Color de fonde del Formulario */
+.fondoFormulario {
+  background-color: #ffa3a3;
+  padding: 30px;
+  max-width: 90%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* ---- Centrar formulario FLEX ---- */
+.centrarFormularioFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Establecemos estilo a Input Nombre - Select - Correo - Asunto */
+.ubicarInputsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.inputSelect {
+  width: 47%;
+  height: 40px;
+  margin-bottom: 20px;
+  padding-left: 5px;
+  border: none;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Estilo del Text Area*/
+.estiloTextArea {
+  margin-top: 18px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  max-width: 100%;
+  border: none;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.divNoticias {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.divTerminos {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+select option {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  font-size: 18px;
+}
+
+/* Estilo de los Placeholder */
+::-webkit-input-placeholder {
+  font-size: 18px;
+  color: black;
+}
+:-ms-input-placeholder {
+  font-size: 18px;
+  color: black;
+}
+::-ms-input-placeholder {
+  font-size: 18px;
+  color: black;
+}
+::placeholder {
+  font-size: 18px;
+  color: black;
+}
+
+form div {
+  font-size: 20px;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+/* Ubicacion y estilo de Botones */
+.ubicarBotonesFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Desktop*/
+@media (min-width: 1370px) {
+  .logo {
+    width: 140px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .bg {
+    font-size: 25px;
+  }
+  ul li {
+    margin: 8px;
+    padding: 5px 5px;
+  }
+  .contenido {
+    padding-top: 150px;
+  }
+  #video {
+    max-width: 100%;
+    height: 760px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .slider3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slider3 .border {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+  }
+  .slider3 .caja1 {
+    height: 730px;
+  }
+  .slider3 .caja2 {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 900px;
+  }
+  .slider3 .caja2 .boton {
+    width: 200px;
+  }
+  /* Escalamos la imagen al pasar el mouse por encima */
+  .slider3 div:hover {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+  }
+  .slider3 div:hover img {
+    border-radius: 50%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .slider3 div:hover .parrafoJustificado {
+    color: white;
+  }
+  .slider3 div img {
+    display: block;
+    width: 400px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .logo-footer {
+    width: 120px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* Pagina NOSOTROS para DESKTOP*/
+  .gridNosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
+    gap: 20px 20px;
+  }
+  .imgPaginaNosotros {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  /* Bucle FOR para aplicar estilos repetitivos a secciones de página NOSOTROS */
+  .seccion1 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1 / 4;
+    margin-left: 15px;
+    height: 100%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .seccion3 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion4 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion5 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion6 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    margin-left: 15px;
+  }
+  .seccion3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+  }
+  .seccion4 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+  }
+  .seccion5 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  .seccion6 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+  }
+  /* Ubicacion y estilo de Botones */
+  .ubicarBotonesFlex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /* Pagina PRODUCTOS Para DESKTOP */
+  .galeriaProductos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 480px 480px 480px;
+        grid-template-columns: 480px 480px 480px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  /* Estilo de la seccion Productos al pasar el Mouse*/
+  .imgProductos:hover {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+    border-radius: 8px;
+  }
+  .imgProductos:hover .img1 {
+    border-radius: 8px;
+  }
+  .imgProductos:hover .h3Prod, .imgProductos:hover .parrafoProd {
+    color: white;
+  }
+  .imgProductos:hover .boton--gradient {
+    background-image: linear-gradient(346deg, #ffabab 0%, #f079bd 50%, white 100%);
+  }
+  .imgProductos:hover .boton__texto {
+    color: black;
+  }
+  /* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+  .contenedor1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 450px 5fr;
+        grid-template-columns: 450px 5fr;
+  }
+}
+
+/* Tableta */
+@media (min-width: 748px) and (max-width: 1369px) {
+  .logo {
+    width: 110px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .bg {
+    font-size: 20px;
+  }
+  .contenido {
+    padding-top: 130px;
+  }
+  #video {
+    max-width: 100%;
+    height: 560px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+  }
+  .slider3 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30%;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+  }
+  .slider3 .border {
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+  }
+  .slider3 div:hover {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  .slider3 div img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* Escalamos la imagen al pasar el mouse por encima */
+  .slider3 div img:hover {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    border-radius: 50%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* FOOTER para TABLETAS */
+  .logo-footer {
+    width: 100px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  /* Pagina NOSOTROS para TABLETAS*/
+  .gridNosotros {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    -ms-grid-rows: 30% 30% 30% 30%;
+        grid-template-rows: 30% 30% 30% 30%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px 20px;
+  }
+  .imgPaginaNosotros {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  /* Bucle FOR para aplicar estilos repetitivos a secciones de página NOSOTROS */
+  .seccion1 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / 3;
+    max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .seccion3 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion4 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion5 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion6 {
+    height: 100%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  .seccion1 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / 2;
+    max-width: 100%;
+  }
+  .seccion3 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3 / 4;
+  }
+  .seccion4 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / 3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4 / 5;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .seccion4 hr {
+    width: 100%;
+  }
+  .seccion5 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / 2;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+  }
+  .seccion5 hr {
+    width: 100%;
+  }
+  .seccion6 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5 / 6;
+  }
+  .seccion6 hr {
+    width: 100%;
+  }
+  /* Pagina PRODUCTOS Para TABLETAS */
+  .galeriaProductos {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 340px 340px;
+        grid-template-columns: 340px 340px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-column-gap: 20px;
+            column-gap: 20px;
+  }
+  .imgProductos {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+    width: 340px;
+    padding: 10px;
+    -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .img1 {
+    max-width: 100%;
+  }
+  /* Estilo de la seccion Productos al pasar el Mouse*/
+  .imgProductos:hover {
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+    background-image: linear-gradient(346deg, #131313 0%, #f079bd 50%, #ff33b9 100%);
+    border-radius: 8px;
+  }
+  .imgProductos:hover .img1 {
+    border-radius: 8px;
+  }
+  .imgProductos:hover .h3Prod, .imgProductos:hover .parrafoProd {
+    color: white;
+  }
+  .imgProductos:hover .boton--gradient {
+    background-image: linear-gradient(346deg, #ffabab 0%, #f079bd 50%, white 100%);
+  }
+  .imgProductos:hover .boton__texto {
+    color: black;
+  }
+  /* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  .contenedor1 {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+/*------------------------------------------------------------------------------*/
+/*------------- Estilo para El Menu Pie de Página Sitio Completo ---------------*/
+/*------------------------------------------------------------------------------*/
+.logo-footer {
+  width: 80px;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.bg-footer {
+  font-size: 18px;
+  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c43ea2), to(#353535));
+  background-image: linear-gradient(to bottom, #c43ea2, #353535);
+}
+/*# sourceMappingURL=origen.css.map */
