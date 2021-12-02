@@ -322,7 +322,14 @@ td p {
 /*-----------------------------------------------------------------------------*/
 /*----------------------- Estilo para Pagina de CONTACTO ----------------------*/
 /*-----------------------------------------------------------------------------*/
+.contenidoContacto {
+  margin-top: 86px; }
+
+.cabeceraContacto {
+  width: 100%; }
+
 .fondoContacto {
+  background-image: url(https://st2.depositphotos.com/3008028/5544/i/600/depositphotos_55447983-stock-photo-abstract-light-blue-background.jpg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -533,7 +540,10 @@ label {
   /* ESTILO PARA LAS PÁGINAS INDIVIDUALES DE LOS PRODUCTOS */
   .contenedor1 {
     display: grid;
-    grid-template-columns: 450px 5fr; } }
+    grid-template-columns: 450px 5fr; }
+  /* PAGINA CONTACTO */
+  .contenidoContacto {
+    margin-top: 146px; } }
 
 /* Tableta */
 @media (min-width: 748px) and (max-width: 1369px) {
@@ -668,7 +678,10 @@ label {
     display: grid;
     grid-template-rows: auto;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+  /* PAGINA CONTACTO */
+  .contenidoContacto {
+    margin-top: 116px; } }
 
 /*------------------------------------------------------------------------------*/
 /*------------- Estilo para El Menu Pie de Página Sitio Completo ---------------*/

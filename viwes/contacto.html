@@ -24,45 +24,48 @@
 </head>
 <body>
 
-    <header>
-        <!-- Cabecera -->
-        <!-- Menu de Navegacion de Cabecera -->
-        <!-- Estos enlaces son relativos -->
-        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-nav">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo.png" alt="Logo de Urnas Flor Del Aire"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="navbar-collapse collapse" id="navbarCollapse">
-                <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                    <a class="nav-link text-light" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="./productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-light" href="./nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border-bottom border-4 border-white active" href="#">Contacto</a>
-                  </li>
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-dark" type="submit">Buscar</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-    </header>
-    
-    <main class="fondoContacto contenido">  
+  <header>
+    <!-- Cabecera -->
+    <!-- Menu de Navegacion de Cabecera -->
+    <!-- Estos enlaces son relativos -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo.png" alt="Logo de Urnas Flor Del Aire"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link text-light" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="./nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-bottom border-4 border-white active" href="#">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Buscar</button>
+          </form>
+        </div>
+      </div>
+      </nav>
+        
+  </header>
+    <main class="fondoContacto contenidoContacto">  
         <!-- Contenido de mi página de Contacto -->
+        <img class="cabeceraContacto" src="../images/bg-contacto.png" alt="">
+
+        <!--
         <h1 class="display-1 centrarTitulos ubicarH1">¿Que podemos hacer por tí?</h1>
         
-        <!-- Acá redactamos un mensaje para el usuario invitando a comunicarse con nosotros -->
+         Acá redactamos un mensaje para el usuario invitando a comunicarse con nosotros
         <p class="centrarParrafos parrafoSuperior display-5">
           Estamos aquí para lo que necesites...
         </p> 
@@ -70,18 +73,18 @@
           Contáctanos usando el formulario y te responderemos
           lo antes posible! 
         </p>
-        
+      -->
         <!-- Formulario de Contacto -->
         <div class="centrarFormularioFlex">
             <form class="fondoFormulario" action="">
                 
                 <!-- Solicitamos nombnre completo de la persona -->
                 <div class="ubicarInputsFlex">
-                    <input class="inputSelect" type="text" name="nombre" placeholder="Nombre completo...">
+                    <input class="inputSelect" type="text" name="nombre" placeholder="Nombre...">
                     
                     <!-- Provincia de residencia requerido- No puede ser vacio -->
                     <select class="inputSelect" name="provincia" id="" required>
-                        <option value="">Elegir Provincia</option>
+                        <option value="">Provincia</option>
                         <option value="BsAs">Buenos Aires</option>
                         <option value="Cordoba">Cordoba</option>
                         <option value="La Rioja">La Rioja</option>
@@ -94,7 +97,7 @@
             
                 <!-- email requerido -->
                 <div class="ubicarInputsFlex">
-                    <input class="inputSelect" type="email" name="email" required placeholder="Correo Electronico:">
+                    <input class="inputSelect" type="email" name="email" required placeholder="Email:">
                     <input class="inputSelect" type="text" name="asunto" placeholder="Asunto:">
                 </div>
                 
