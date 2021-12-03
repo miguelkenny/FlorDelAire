@@ -207,6 +207,10 @@ td a {
   .slider3 div:hover .parrafoJustificado {
     color: white; }
 
+.espacio {
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
 .border {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
