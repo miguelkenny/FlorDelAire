@@ -18,7 +18,10 @@
     }
 }
 
-
+.cabecera-nosotros{
+    width: 100%;
+    box-shadow: $sombra;
+}
 
 /* Bucle FOR para aplicar estilos repetitivos a las secciones*/
 @for $i from 1 through 6{

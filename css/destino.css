@@ -276,6 +276,10 @@ td p {
     border-radius: 8px;
     align-content: center; }
 
+.cabecera-nosotros {
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
 /* Bucle FOR para aplicar estilos repetitivos a las secciones*/
 .seccion1 {
   padding: 25px 20px;
@@ -311,7 +315,8 @@ td p {
 /*--------------------------- Estilo Pagina PRODUCTOS -------------------------*/
 /*-----------------------------------------------------------------------------*/
 .headerProd {
-  width: 100%; }
+  width: 100%;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .fondoProductos {
   background-image: url(https://image.freepik.com/vector-gratis/fondo-abstracto-acuarela_220290-23.jpg);
