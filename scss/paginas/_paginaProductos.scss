@@ -2,16 +2,7 @@
 /*--------------------------- Estilo Pagina PRODUCTOS -------------------------*/
 /*-----------------------------------------------------------------------------*/
 .headerProd{
-    height: 300px;
-    background-image: linear-gradient(#c33da1, #141b49);
-    margin-bottom: 30px;
-    h1{
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        color:$blanco;
-        margin: 0 auto;
-        height: 100%;
-        box-shadow: $sombra;
-    }
+    width: 100%;
 }
 .fondoProductos{
     background-image: url(https://image.freepik.com/vector-gratis/fondo-abstracto-acuarela_220290-23.jpg);
