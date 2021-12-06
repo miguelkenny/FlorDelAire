@@ -235,6 +235,27 @@ td p {
   justify-content: center;
   align-items: center; }
 
+/* Estilo para el botón flotante de WhatsApp de todo el sitio */
+.btn-wsp {
+  position: fixed;
+  width: 65px;
+  height: 65px;
+  line-height: 65px;
+  bottom: 19%;
+  right: 3%;
+  background: #0dfe53;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 100; }
+
+.btn-wsp:hover {
+  text-decoration: none;
+  color: #0dfe53;
+  background: white; }
+
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Estilo Pagina NOSOTROS --------------------------*/
 /*-----------------------------------------------------------------------------*/
@@ -560,7 +581,26 @@ label {
     margin-left: auto;
     margin-right: auto;
     width: 290px;
-    border-radius: 10px; } }
+    border-radius: 10px; }
+  /* Estilo para el botón flotante de WhatsApp de todo el sitio */
+  .btn-wsp {
+    position: fixed;
+    width: 85px;
+    height: 85px;
+    line-height: 85px;
+    bottom: 13%;
+    right: 7%;
+    background: #0dfe53;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100; }
+  .btn-wsp:hover {
+    text-decoration: none;
+    color: #0dfe53;
+    background: white; } }
 
 /* Tableta */
 @media (min-width: 748px) and (max-width: 1369px) {
@@ -706,7 +746,26 @@ label {
     margin-left: auto;
     margin-right: auto;
     width: 290px;
-    border-radius: 10px; } }
+    border-radius: 10px; }
+  /* Estilo para el botón flotante de WhatsApp de todo el sitio */
+  .btn-wsp {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    line-height: 75px;
+    bottom: 90px;
+    right: 30px;
+    background: #0dfe53;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 100; }
+  .btn-wsp:hover {
+    text-decoration: none;
+    color: #0dfe53;
+    background: white; } }
 
 /*------------------------------------------------------------------------------*/
 /*------------- Estilo para El Menu Pie de Página Sitio Completo ---------------*/

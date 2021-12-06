@@ -236,3 +236,27 @@ td p{
     justify-content: center;
     align-items: center;
 }
+
+/* Estilo para el botón flotante de WhatsApp de todo el sitio */
+
+.btn-wsp{
+    position: fixed;
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    bottom:19%;
+    right:3%;
+    background: #0dfe53;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 40px;
+    box-shadow: $sombra;
+    z-index: 100;
+}
+
+.btn-wsp:hover{
+    text-decoration: none;
+    color: #0dfe53;
+    background: white;
+}
