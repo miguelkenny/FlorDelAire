@@ -26,33 +26,31 @@
     }
     .slider3{
         display: grid;
-        grid-template-columns: 33% 33% 33%;
-        column-gap: 30px;
+        grid-template-rows: 33% 33% 33%;
+        justify-content: center;
+        align-content: center;
+        width: 80%;
+        margin: 0 auto;
+        row-gap: 25px;
+        margin-bottom: 30px;
         .border{
             box-shadow: $sombra;
             border-radius: 10px;
         }
-        .caja1{
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            height: 700px;
+        div img{
+            display: block;
+            width: 250px;
+            height: auto;
+            margin-top: 10px;
             margin-bottom: 30px;
-            .boton{
-                width: 30%;
-            }
-        }
-    
-        .caja2{
-            display: grid;
-            justify-content: center;
-            align-items: center;
-            height: 700px;
-            .boton{
-                width: 30%;
-            }
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 50%;
+            border-radius: 50%;
+            box-shadow: $sombra;
         }
     }
+    
 
     .slider3 div:hover{
         transition: 0.8s;

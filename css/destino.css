@@ -323,6 +323,12 @@ td p {
   .imgProductos:hover .boton__texto {
     color: black; }
 
+.imgProd {
+  border-radius: 10px; }
+
+.margenIzq {
+  margin-left: 20px; }
+
 /*-----------------------------------------------------------------------------*/
 /*----------------------- Estilo para Pagina de CONTACTO ----------------------*/
 /*-----------------------------------------------------------------------------*/
@@ -574,26 +580,27 @@ label {
     font-size: 50px; }
   .slider3 {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    column-gap: 30px; }
+    grid-template-rows: 33% 33% 33%;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin: 0 auto;
+    row-gap: 25px;
+    margin-bottom: 30px; }
     .slider3 .border {
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
       border-radius: 10px; }
-    .slider3 .caja1 {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      height: 700px;
-      margin-bottom: 30px; }
-      .slider3 .caja1 .boton {
-        width: 30%; }
-    .slider3 .caja2 {
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      height: 700px; }
-      .slider3 .caja2 .boton {
-        width: 30%; }
+    .slider3 div img {
+      display: block;
+      width: 250px;
+      height: auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 50%;
+      border-radius: 50%;
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .slider3 div:hover {
     transition: 0.8s;
     transform: scale(1.1, 1.1); }
