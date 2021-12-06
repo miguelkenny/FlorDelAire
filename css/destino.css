@@ -759,7 +759,7 @@ label {
     line-height: 75px;
     bottom: 90px;
     right: 30px;
-    background: #0dfe53;
+    background: #00bb2d;
     color: white;
     border-radius: 50%;
     text-align: center;
@@ -768,7 +768,7 @@ label {
     z-index: 100; }
   .btn-wsp:hover {
     text-decoration: none;
-    color: #0dfe53;
+    color: #00bb2d;
     background: white; } }
 
 /*------------------------------------------------------------------------------*/

@@ -184,8 +184,8 @@
     line-height: 85px;
     bottom:13%;
     right:7%;
-    background: #00bb2d;
-    color: white;
+    background: $verde-wsp;
+    color: $blanco;
     border-radius: 50%;
     text-align: center;
     font-size: 50px;
@@ -195,8 +195,8 @@
 
 .btn-wsp:hover{
     text-decoration: none;
-    color:#00bb2d;
-    background: white;
+    color: $verde-wsp;
+    background: $blanco;
 }
 
 }
