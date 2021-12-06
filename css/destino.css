@@ -318,7 +318,8 @@ td p {
 
 .galeriaProductos {
   display: grid;
-  justify-content: center; }
+  justify-content: center;
+  row-gap: 20px; }
 
 .imgProductos {
   align-items: center;
