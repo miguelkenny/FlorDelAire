@@ -243,7 +243,7 @@ td p {
   line-height: 65px;
   bottom: 19%;
   right: 3%;
-  background: #0dfe53;
+  background: #00bb2d;
   color: white;
   border-radius: 50%;
   text-align: center;
@@ -253,7 +253,7 @@ td p {
 
 .btn-wsp:hover {
   text-decoration: none;
-  color: #0dfe53;
+  color: #00bb2d;
   background: white; }
 
 /*-----------------------------------------------------------------------------*/
@@ -590,7 +590,7 @@ label {
     line-height: 85px;
     bottom: 13%;
     right: 7%;
-    background: #0dfe53;
+    background: #00bb2d;
     color: white;
     border-radius: 50%;
     text-align: center;
@@ -599,7 +599,7 @@ label {
     z-index: 100; }
   .btn-wsp:hover {
     text-decoration: none;
-    color: #0dfe53;
+    color: #00bb2d;
     background: white; } }
 
 /* Tableta */

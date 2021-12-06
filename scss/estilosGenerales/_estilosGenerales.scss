@@ -246,8 +246,8 @@ td p{
     line-height: 65px;
     bottom:19%;
     right:3%;
-    background: #0dfe53;
-    color: white;
+    background: $verde-wsp;
+    color:$blanco;
     border-radius: 50%;
     text-align: center;
     font-size: 40px;
@@ -257,6 +257,6 @@ td p{
 
 .btn-wsp:hover{
     text-decoration: none;
-    color: #0dfe53;
-    background: white;
+    color: $verde-wsp;
+    background: $blanco;
 }
