@@ -323,13 +323,13 @@ td p {
 .imgProductos {
   align-items: center;
   background-color: white;
-  width: 400px;
-  margin: 20px;
+  width: 88%;
+  margin: 0 auto;
   padding: 10px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
   .imgProductos .img1 {
     margin: 0 auto;
-    width: 380px; }
+    width: 100%; }
 
 /* Estilo de la seccion Productos al pasar el Mouse*/
 .imgProductos:hover {
@@ -339,7 +339,7 @@ td p {
   border-radius: 8px; }
   .imgProductos:hover .img1 {
     margin: 0 auto;
-    width: 380px;
+    width: 100%;
     border-radius: 8px; }
   .imgProductos:hover .h3Prod, .imgProductos:hover .parrafoProd {
     color: white; }
@@ -349,7 +349,7 @@ td p {
     color: black; }
 
 .imgProd {
-  border-radius: 10px; }
+  border-radius: 20px; }
 
 .margenIzq {
   margin-left: 20px; }
@@ -593,7 +593,7 @@ label {
     height: 85px;
     line-height: 85px;
     bottom: 13%;
-    right: 7%;
+    right: 8%;
     background: #00bb2d;
     color: white;
     border-radius: 50%;
