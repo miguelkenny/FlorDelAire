@@ -624,8 +624,9 @@ label {
     text-decoration: none;
     color: #00bb2d;
     background: white; }
+  /*---------- PÁGINA 404 -----------*/
   .img-404 {
-    width: 40%; } }
+    width: 80%; } }
 
 /* Tableta */
 @media (min-width: 748px) and (max-width: 1369px) {
@@ -792,10 +793,8 @@ label {
     color: #00bb2d;
     background: white; }
   /*---------- PÁGINA 404 -----------*/
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem; }
   .img-404 {
-    width: 40%; } }
+    width: 60%; } }
 
 /*------------------------------------------------------------------------------*/
 /*------------- Estilo para El Menu Pie de Página Sitio Completo ---------------*/
@@ -811,15 +810,8 @@ label {
   background-image: linear-gradient(to bottom, #c43ea2, #353535); }
 
 /*---------- Estilos Generales Página 404 ----------*/
-.bd-placeholder-img {
-  font-size: 1.125rem;
-  text-anchor: middle;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none; }
-
 .img-404 {
-  width: 80%; }
+  width: 50%; }
 
 .lead {
   margin-top: 30px; }
