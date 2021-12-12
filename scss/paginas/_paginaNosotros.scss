@@ -1,8 +1,13 @@
 /*-----------------------------------------------------------------------------*/
 /*--------------------------- Estilo Pagina NOSOTROS --------------------------*/
 /*-----------------------------------------------------------------------------*/
+.cabecera-nosotros{
+    width: 100%;
+    box-shadow: $sombra;
+}
 
 .gridNosotros{
+    display: grid;
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
@@ -16,11 +21,6 @@
         border-radius: 8px;
         align-content: center;
     }
-}
-
-.cabecera-nosotros{
-    width: 100%;
-    box-shadow: $sombra;
 }
 
 /* Bucle FOR para aplicar estilos repetitivos a las secciones*/
